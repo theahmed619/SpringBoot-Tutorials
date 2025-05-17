@@ -1,0 +1,24 @@
+package com.example.yeshendrayt;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("authcounter")
+public class SimpleAuthorityCounter implements AuthorityCounter {
+	
+	@Autowired
+	private UserList userList;
+
+//	@Override
+//	public void setUserList(UserList userList) {
+//		this.userList=userList;
+//		
+//	}
+
+	@Override
+	public UserList getUserList() {
+		// TODO Auto-generated method stub
+		return this.userList;
+	}
+
+}

@@ -1,0 +1,15 @@
+<%@page import="com.example.yeshendrayt.entity.Flight"%>
+<%@page import="java.util.List"%>
+<html>
+<head>
+<title>Flight Result</title>
+</head>
+<body>
+			
+			<%
+				List<Flight> listOfFlight=(List<Flight>)request.getAttribute("listofsearchflight");
+			
+			%>
+
+</body>
+</html>

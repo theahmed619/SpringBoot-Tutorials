@@ -1,0 +1,15 @@
+package com.example.yeshendrayt.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SchduledTask {
+	
+	private int counter=0;
+	private void nightlyCycle() {
+		
+		counter++;
+		System.out.println("Nightly Process Executed"+counter);
+	}
+
+}

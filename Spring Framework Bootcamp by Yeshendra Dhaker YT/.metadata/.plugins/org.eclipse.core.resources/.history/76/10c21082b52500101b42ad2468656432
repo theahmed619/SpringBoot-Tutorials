@@ -1,0 +1,16 @@
+package com.example.yeshendrayt.communicator;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.springframework.web.client.RestTemplate;
+
+public class RestTemplateCommunicator {
+	
+	private final RestTemplate  restTemplate;
+	
+	@Autowired
+	public RestTemplateCommunicator(RestTemplateBuilder restTemplateBuilder) {
+		this.restTemplate=restTemplateBuilder.build();
+	}
+
+}

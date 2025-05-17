@@ -1,0 +1,5 @@
+package com.example.yeshendrayt.repo;
+
+public interface ProductRepo {
+
+}

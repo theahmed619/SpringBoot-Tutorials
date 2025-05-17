@@ -1,0 +1,5 @@
+package com.example.yeshendrayt.entity;
+
+public class IssueRecord {
+
+}

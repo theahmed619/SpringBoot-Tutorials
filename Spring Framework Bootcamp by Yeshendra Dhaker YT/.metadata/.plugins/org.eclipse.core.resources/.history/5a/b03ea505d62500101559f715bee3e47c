@@ -1,0 +1,5 @@
+package com.example.yeshendrayt.model;
+
+public class GmailSender {
+
+}

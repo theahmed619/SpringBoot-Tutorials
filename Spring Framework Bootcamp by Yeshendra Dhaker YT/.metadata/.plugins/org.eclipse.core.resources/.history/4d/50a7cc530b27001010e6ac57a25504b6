@@ -1,0 +1,24 @@
+package com.example.yeshendrayt.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.yeshendrayt.entity.Email;
+import com.example.yeshendrayt.service.GmailReciverService;
+
+@Controller
+public class GmailReciverController {
+	
+	@Autowired
+	GmailReciverService gmailReciverService;
+
+	@GetMapping("/")
+	public String inbox() {
+		List<Email> emailList=
+		
+		return "inbox";
+	}
+}

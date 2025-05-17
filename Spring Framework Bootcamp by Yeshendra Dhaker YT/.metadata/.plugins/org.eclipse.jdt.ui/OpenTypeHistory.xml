@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=HotelManagementApp/C:\/Users\/FAISAL\/.m2\/repository\/org\/hibernate\/orm\/hibernate-core\/6.6.13.Final\/hibernate-core-6.6.13.Final.jar=/maven.pomderived=/true=/=/maven.groupId=/org.hibernate.orm=/=/maven.artifactId=/hibernate-core=/=/maven.version=/6.6.13.Final=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.hibernate.dialect(H2Dialect.class[H2Dialect" modifiers="33" timestamp="1745905712347"/>
+    <typeInfo handle="=TODOApp/C:\/Users\/FAISAL\/.m2\/repository\/org\/hibernate\/orm\/hibernate-core\/6.6.13.Final\/hibernate-core-6.6.13.Final.jar=/maven.pomderived=/true=/=/maven.groupId=/org.hibernate.orm=/=/maven.artifactId=/hibernate-core=/=/maven.version=/6.6.13.Final=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.hibernate.dialect(MySQL8Dialect.class[MySQL8Dialect" modifiers="1048609" timestamp="1745905712347"/>
+</typeInfoHistroy>

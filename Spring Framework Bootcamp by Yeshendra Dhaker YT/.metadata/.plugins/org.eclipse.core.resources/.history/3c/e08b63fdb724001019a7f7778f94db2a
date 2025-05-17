@@ -1,0 +1,12 @@
+package com.example.yeshendrayt;
+
+import java.util.Scanner;
+
+public class User {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		
+		System.out.println("Select Drink\n1. LATTE\n2. ESPRESSO\n3. BLACK COFFE");
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.example.yeshendrayt;
+
+public class CommerceStudent implements Student {
+
+	@Override
+	public String stream() {
+		// TODO Auto-generated method stub
+		return "im commerce student";
+	}
+
+}

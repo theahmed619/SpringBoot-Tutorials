@@ -1,0 +1,14 @@
+package com.example.yeshendrayt;
+
+import org.springframework.stereotype.Component;
+
+@Component("studentinfo")
+public class StudentInfo {
+	
+	Student student;
+	
+	public void showDetails() {
+		System.out.println(student.college());
+	}
+
+}

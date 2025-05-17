@@ -1,0 +1,34 @@
+package com.example.yeshendrayt;
+
+public class SimpleUser implements User{
+	
+	String userName;
+	PostList postList;
+	
+
+	@Override
+	public void setUserName(String userName) {
+		this.userName=userName;
+		
+	}
+
+	@Override
+	public String getUserName() {
+		// TODO Auto-generated method stub
+		return this.userName;
+	}
+
+	
+	public void setPostList(PostList postList) {
+		
+		this.postList=postList;
+		
+	}
+
+	@Override
+	public PostList getPostList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

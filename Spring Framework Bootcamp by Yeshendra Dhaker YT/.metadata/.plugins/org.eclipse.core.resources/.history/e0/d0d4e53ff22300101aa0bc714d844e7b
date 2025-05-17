@@ -1,0 +1,28 @@
+package com.example.yeshendrayt;
+
+import java.util.Scanner;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+//@SpringBootApplication
+public class SocialMediaApplication {
+
+	public static void main(String[] args) {
+		//SpringApplication.run(SocialMediaApplication.class, args);
+		
+		ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("ApplicationContext.xml");
+		
+		Scanner scanner=new Scanner(System.in);
+		User user =(User)context.getBean("user");
+		
+		System.out.println("Enter your Username:\n");
+		String username=scanner.next();
+		
+		
+		user.setUserName(username);
+		
+	}
+
+}

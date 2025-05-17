@@ -1,0 +1,3 @@
+spring.application.name=FirstSpringMVCProject
+
+server.port=8090

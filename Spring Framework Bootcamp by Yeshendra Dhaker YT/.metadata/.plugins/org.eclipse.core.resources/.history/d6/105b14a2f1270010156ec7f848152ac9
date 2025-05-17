@@ -1,0 +1,10 @@
+package com.example.yeshendrayt.dto;
+
+public class LoginResponseDTO {
+  private String token;
+  private String username;
+  private String role;
+  
+  
+  
+}

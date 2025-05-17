@@ -1,0 +1,29 @@
+package com.example.yeshendrayt;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.example.yeshendrayt.service.CalculatorService;
+
+@SpringBootTest
+class SpringBootInterviewQ1ApplicationTests {
+
+	@Autowired
+	private CalculatorService calculatorService;
+	
+	@Test
+	void testAdd() {
+		int a=5;
+		int b=10;
+		int result=calculatorService.add(a, b);
+		assertEquals(15, result);
+	}
+	
+	@Test
+	void contextLoads() {
+	}
+
+}

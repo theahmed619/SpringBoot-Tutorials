@@ -1,0 +1,36 @@
+package com.example.yeshendrayt.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.example.yeshendrayt.entity.Todo;
+
+@Controller
+public class TodoController {
+	
+		@RequestMapping(value = "addtodo", method = RequestMethod.POST)
+		public String createTodo(@ModelAttribute Todo todo) {
+			
+			
+			return "";
+		}
+		
+		public String updateTodo() {
+			
+			return "";
+			}
+		
+		public String deleteTodo() {
+			
+			return "";
+			
+		}
+		public String getAllTodo() {
+			
+			
+			return "";
+		}
+
+}

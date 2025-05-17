@@ -1,0 +1,9 @@
+package com.example.yeshendrayt.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.example.yeshendrayt.entity.DateAndTime;
+
+public interface DateAndTimeRepo extends JpaRepository<DateAndTime, Long>{
+
+}

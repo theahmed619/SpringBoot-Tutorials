@@ -1,0 +1,13 @@
+package com.example.yeshendrayt.entity;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class UserDetails {
+	
+	private Long id;
+	private String address;
+	private String phone;
+	private String passportNumber
+
+}

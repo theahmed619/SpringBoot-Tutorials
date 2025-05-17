@@ -1,0 +1,20 @@
+package com.example.yeshendrayt.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.yeshendrayt.entity.Todo;
+import com.example.yeshendrayt.repository.TodoRepoitory;
+
+@Service
+public class TodoService {
+	
+	@Autowired
+	TodoRepoitory todoRepoitory;
+	
+	public void saveTodo(Todo todo) {
+		todoRepoitory.save(todo);
+		
+	}
+
+}

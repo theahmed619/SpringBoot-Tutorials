@@ -1,0 +1,27 @@
+package com.example.yeshendrayt.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.yeshendrayt.entity.Book;
+import com.example.yeshendrayt.repository.BookRepo;
+
+@Service
+public class BookService {
+
+	@Autowired
+	private BookRepo bookRepo;
+
+	public List<Book> getAllBooks() {
+		return bookRepo.findAll();
+	}
+
+	public Book getBookById(Long id) {
+		Book book = bookRepo.findById(id).orElseThrow(() -> new RuntimeException("Book Not Found"));
+
+		return book;
+	}
+
+}

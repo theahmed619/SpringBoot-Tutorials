@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;GmailReciever/src/main/resources/templates/indox.html&apos; to &apos;inbox.html&apos;" description="Rename resource &apos;indox.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/templates/indox.html" name="inbox.html" stamp="1746154582068" updateReferences="true"/>
+</session>

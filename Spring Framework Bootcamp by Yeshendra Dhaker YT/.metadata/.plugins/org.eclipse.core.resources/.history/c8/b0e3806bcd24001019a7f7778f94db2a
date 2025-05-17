@@ -1,0 +1,22 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<title>TODO Application</title>
+</head>
+<body>
+	
+	<form action="/addtodo" method="post">
+	
+	<input type="text" name="taskContent" placeholder="Write your task">
+	<button type="submit">ADD TODO</button>
+	
+	</form>
+	
+	<ul>
+			<li th:each="todo:${todos}">
+			
+			
+			</li>
+	</ul>
+		
+</body>
+</html>

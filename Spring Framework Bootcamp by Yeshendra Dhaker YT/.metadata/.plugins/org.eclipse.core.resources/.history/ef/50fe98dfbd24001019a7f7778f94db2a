@@ -1,0 +1,8 @@
+package com.example.yeshendrayt.entity;
+
+public class Todo {
+	
+	private String taskContent;
+	private String status;
+
+}

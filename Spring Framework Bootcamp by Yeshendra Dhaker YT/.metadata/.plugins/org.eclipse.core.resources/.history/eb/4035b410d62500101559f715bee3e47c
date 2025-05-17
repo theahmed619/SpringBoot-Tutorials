@@ -1,0 +1,8 @@
+package com.example.yeshendrayt.model;
+
+public class GmailSender {
+	
+	private String to;
+	private String subject;
+	private String message;
+}

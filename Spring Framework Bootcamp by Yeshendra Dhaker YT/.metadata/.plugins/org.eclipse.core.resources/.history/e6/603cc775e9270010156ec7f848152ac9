@@ -1,0 +1,5 @@
+package com.example.yeshendrayt.dto;
+
+public class RegisterDTO {
+
+}

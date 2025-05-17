@@ -1,0 +1,19 @@
+package com.example.yeshendrayt;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+//@SpringBootApplication
+public class DIusingAnnotationsApplication {
+
+	public static void main(String[] args) {
+		//SpringApplication.run(DIusingAnnotationsApplication.class, args);
+		
+		AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext("com.example.yeshendrayt");
+		
+		StudentInfo info=(StudentInfo)context.getBean("studentinfo");
+		info.showDetails();
+	}
+
+}

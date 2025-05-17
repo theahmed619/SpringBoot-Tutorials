@@ -1,0 +1,5 @@
+package com.example.yeshendrayt.exception;
+
+public class GlobalExceptionHandler {
+
+}

@@ -1,0 +1,11 @@
+package com.example.yeshendrayt;
+
+public class MacBook implements Brand{
+
+	@Override
+	public void showDetails() {
+		System.out.println("You have selected Dell Laptop");
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<title>TODO Application</title>
+</head>
+<body>
+	
+	<form action="/addtodo" method="post">
+	
+	<input type="text" name="taskContent" placeholder="Write your task">
+	<button type="submit">ADD TODO</button>
+	
+	</form>
+	
+	<ul>
+			<li th:each="todo:${todos}">
+				
+			<form th:action="@{/updatetodo/{id}(id=${todo.id})}" method="post">
+			<input type="text" th:value="${todo.taskContent}" name="taskContent">
+			<input type="checkbox" th:checked="${todo.status}" name="status">
+			<button type="submit">UPDATE</button>
+			<button>DELETE</button>
+			</form>
+			</li>
+	</ul>
+		
+</body>
+</html>

@@ -1,0 +1,20 @@
+package com.example.yeshendrayt.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+import com.example.yeshendrayt.entity.Product;
+import com.example.yeshendrayt.repo.ProductRepo;
+
+@Service
+public class ProductService {
+	
+	@Autowired
+	ProductRepo productRepo;
+	
+	public ResponseEntity<?> saveProduct(Product product){
+		
+	}
+
+}

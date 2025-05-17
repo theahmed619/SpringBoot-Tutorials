@@ -1,0 +1,12 @@
+package com.example.yeshendrayt;
+
+import org.springframework.stereotype.Component;
+
+@Component("student")
+public class Student {
+	
+	String college() {
+		return "Bhavans";
+	}
+
+}
