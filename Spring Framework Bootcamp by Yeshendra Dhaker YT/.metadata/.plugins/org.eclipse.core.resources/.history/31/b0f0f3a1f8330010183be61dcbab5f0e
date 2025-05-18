@@ -1,0 +1,36 @@
+package com.example.yeshendrayt.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.yeshendrayt.dto.BookingDTO;
+import com.example.yeshendrayt.entity.Booking;
+import com.example.yeshendrayt.entity.Show;
+import com.example.yeshendrayt.repository.BookingRepo;
+import com.example.yeshendrayt.repository.ShowRepo;
+
+@Service
+public class BookingService {
+
+	@Autowired
+	private BookingRepo bookingRepo;
+
+	@Autowired
+	private ShowRepo showRepo;
+
+	public Booking createBooking(BookingDTO bookingDTO) {
+
+		Show show = showRepo.findById(bookingDTO.getShowId()).orElseThrow(() -> new RuntimeException("Show not found"));
+	
+		if(!isSeatsAvailable(show.getId(),bookingDTO.getNumberOfSeats())) {
+			throw new RuntimeException("Not enough saet are avilable");
+		}
+		
+	
+	}
+	
+	public boolean isSeatsAvailable(Long showid, Integer numberOdSeats) {
+		
+	}
+
+}
