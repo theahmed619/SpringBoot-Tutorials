@@ -1,8 +1,0 @@
-spring.application.name=GmailReciever
-server.port=8090
-
-
-spring.mail.username=theahmed298@gmail.com
-spring.mail.password=zsvv hosj xhdd rukr
-spring.mail.host=imap.gmail.com
-spring.mail.port=993

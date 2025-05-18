@@ -1,0 +1,45 @@
+package com.example.yeshendrayt.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.example.yeshendrayt.dto.ShowDTO;
+import com.example.yeshendrayt.entity.Movie;
+import com.example.yeshendrayt.entity.Show;
+import com.example.yeshendrayt.entity.Theater;
+import com.example.yeshendrayt.repository.MovieRepo;
+import com.example.yeshendrayt.repository.ShowRepo;
+import com.example.yeshendrayt.repository.TheaterRepo;
+
+@Service
+public class ShowService {
+
+	@Autowired
+	private ShowRepo showRepo;
+
+	@Autowired
+	private MovieRepo movieRepo;
+
+	@Autowired
+	private TheaterRepo theaterRepo;
+
+	public Show createShow(ShowDTO showDTO) {
+
+		Movie movie = movieRepo.findById(showDTO.getMovieId())
+				.orElseThrow(() -> new RuntimeException("No Movie Found for id "+showDTO.getMovieId()));
+
+		Theater theater = theaterRepo.findById(showDTO.getTheaterId())
+				.orElseThrow(() -> new RuntimeException("No Theater Found for id "+showDTO.getTheaterId()));
+
+		Show show=new Show();
+		show.setShowTime(showDTO.getShowTime());
+		show.setPrice(showDTO.getPrice());
+		show.setMovie(movie);
+		show.setTheater(theater);
+		
+		return showRepo.save(show);
+		
+		
+	}
+
+}

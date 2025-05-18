@@ -1,6 +1,0 @@
-package snippet;
-
-public class Snippet {
-	ocess failed500 Internal Server Error on POST request for "http://localhost:8090/sendmail": "{"timestamp":"2025-05-03T03:04:47.922+00:00","status":500,"error":"Internal Server Error","trace":"java.lang.NullPointerException: Cannot invoke \"String.length()\" because \"s\" is null\r\n\tat jakarta.mail.internet.InternetAddress.parse(InternetAddress.java:778)\r\n\tat jakarta.mail.internet.InternetAddress.parse(InternetAddress.java:737)\r\n\tat jakarta.mail.internet.InternetAddress.parse(InternetAddress.java:714)\r\n\tat org.springframework.mail.javamail.MimeMessageHelper.parseAddress(MimeMessageHelper.java:736)\r\n\tat
-}
-

@@ -2,7 +2,7 @@ package com.example.yeshendrayt.entity;
 
 public enum BookingStatus {
 	
-	CONFIRM,
+	CONFIRMED,
 	CANCELLED,
 	PENDING
 

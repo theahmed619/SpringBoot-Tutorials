@@ -1,5 +1,0 @@
-package com.example.CarDealer;
-
-public class CyberTruckCar implements Car{
-
-}

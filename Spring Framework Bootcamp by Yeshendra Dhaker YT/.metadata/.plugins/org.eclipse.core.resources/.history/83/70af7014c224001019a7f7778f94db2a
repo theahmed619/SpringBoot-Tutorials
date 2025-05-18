@@ -1,9 +1,0 @@
-package com.example.yeshendrayt.repository;
-
-public class TodoRepoitory {
-	
-	public void save() {
-		
-	}
-
-}

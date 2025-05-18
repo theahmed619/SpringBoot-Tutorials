@@ -1,9 +1,0 @@
-package com.example.yeshendrayt.entity;
-
-public class Todo {
-	
-	private Long id;
-	private String taskContent;
-	private String status;
-
-}

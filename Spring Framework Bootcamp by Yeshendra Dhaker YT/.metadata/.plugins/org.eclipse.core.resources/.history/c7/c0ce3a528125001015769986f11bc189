@@ -1,9 +1,0 @@
-server:
-  port: 8090
-
-spring:
-  datasource:
-    url: mysql:jdbc://localhost:3306/spring_product
-    username: root
-    password: root
-  
