@@ -2,6 +2,8 @@ package com.example.yeshendrayt.entity;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -22,7 +24,8 @@ public class Theater {
 	private Integer theatreCapacity;
 	private String theatreScreenType;
 	
-	@OneToMany(mappedBy = "theatre", fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "theater", fetch = FetchType.LAZY)
+	@JsonIgnore
 	private List<Show> show;
 	
 

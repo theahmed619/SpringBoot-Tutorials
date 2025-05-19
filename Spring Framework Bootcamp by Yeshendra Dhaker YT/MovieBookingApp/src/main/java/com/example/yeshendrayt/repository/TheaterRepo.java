@@ -11,6 +11,6 @@ import com.example.yeshendrayt.entity.Theater;
 @Repository
 public interface TheaterRepo extends JpaRepository<Theater, Long>{
 	
-	Optional<List<Theater>> findByLocation(String location);
+	Optional<List<Theater>> findByTheatreLocation(String location);
 
 }

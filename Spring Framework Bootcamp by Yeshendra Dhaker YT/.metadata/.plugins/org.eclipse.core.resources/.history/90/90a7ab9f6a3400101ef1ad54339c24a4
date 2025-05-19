@@ -1,0 +1,45 @@
+package com.example.yeshendrayt.jwt;
+
+import java.util.function.Function;
+
+import javax.crypto.SecretKey;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.security.Keys;
+
+@Service
+public class JwtService {
+
+	@Value("${jwt.secret}")
+	private String secretKey;
+
+	private Long jwtexpiration;
+
+	public String extractUsername(String jwtToken) {
+
+		return extractClaim(jwtToken, Claims::getSubject);
+	}
+
+	private <T> T extractClaim(String jwtToken, Function<Claims, T> claimResolver) {
+
+		final Claims claims = extractAllClaims(jwtToken);
+
+		return claimResolver.apply(claims);
+	}
+
+	private Claims extractAllClaims(String jwtToken) {
+
+		return Jwts.parser().verifyWith(getSignInKey()).build().parserSignedClaims(jwtToken).getPayload();
+
+	}
+
+	public SecretKey getSecretKey() {
+
+		return Keys.hmacShaKeyFor(secretKey.getBytes());
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.example.yeshendrayt.entity;
+
+import java.util.List;
+import java.util.Set;
+
+import jakarta.persistence.ElementCollection;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Entity
+@Data
+@Table(name = "users")
+public class User {
+	
+	private Long id;
+	private String username;
+	private String email;
+	private String password;
+	
+	@ElementCollection(fetch = FetchType.EAGER)
+	private Set<String> roles;
+	
+	@OneToMany
+	private List<Booking> Bookings;
+
+}

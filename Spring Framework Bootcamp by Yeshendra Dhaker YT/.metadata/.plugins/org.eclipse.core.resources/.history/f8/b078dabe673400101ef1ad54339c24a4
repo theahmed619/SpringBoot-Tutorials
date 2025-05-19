@@ -1,0 +1,25 @@
+package com.example.yeshendrayt.jwt;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+import io.jsonwebtoken.Claims;
+
+@Service
+public class JwtService {
+	
+	@Value("${jwt.secret}")
+	private String secretKey;
+	
+	private Long jwtexpiration;
+	
+	public String extractUsername(String jwtToken) {
+		
+		return extractClaim(jwtToken, Claims::getSubject)
+	}
+	
+	public <T> extractClaim(String jwtToken, Function<Claims, T> claimResolver){
+		
+	}
+
+}

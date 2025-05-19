@@ -3,6 +3,8 @@ package com.example.yeshendrayt.entity;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -26,6 +28,7 @@ public class Movie {
 	private String language;
 	
 	@OneToMany(mappedBy = "movie", fetch = FetchType.LAZY)
+	@JsonIgnore
 	private List<Show> show;
 	
 
